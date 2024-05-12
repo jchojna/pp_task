@@ -6,10 +6,19 @@
   padding: 5rem 5rem 6.75rem;
   width: 100%;
 
+  @media screen and (max-width: 1440px) {
+    gap: 12vw;
+    padding: 3rem 3rem 5rem;
+  }
+
+  @media screen and (max-width: 1000px) {
+    padding: 1.5rem 1.5rem 2rem;
+  }
+
   .placeholder {
     background-color: var(--color-grey);
     border-radius: 0.5rem;
-    height: 744px; /* hardcoded for now */
+    height: 744px;
     width: 100%;
   }
 }

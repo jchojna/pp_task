@@ -5,6 +5,10 @@
   --color-sand-dark: #b06642;
   --color-sand-light: #f4b17e;
 
+  --media-s: 768px;
+  --media-m: 992px;
+  --media-l: 1440px;
+
   font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
   background-color: var(--color-white);
   color: var(--color-primary);
