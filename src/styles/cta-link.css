@@ -39,8 +39,8 @@
     width: var(--glow-size);
   }
 
-  /* hover effect not accessible on mobile devices */
-  @media screen and (min-width: 1001px) {
+  /* hover effect not applied on mobile devices */
+  @media screen and (min-width: 769px) {
     &:hover::before {
       opacity: 1;
       transition: opacity 0.3s, transform 0.3s, visibility 0s;

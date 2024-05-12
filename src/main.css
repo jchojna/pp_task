@@ -1,4 +1,4 @@
-@import 'styles/base.css';
-@import 'styles/layout.css';
-@import 'styles/hero.css';
-@import 'styles/cta-link.css';
+@import url('styles/base.css');
+@import url('styles/layout.css');
+@import url('styles/hero.css');
+@import url('styles/cta-link.css');

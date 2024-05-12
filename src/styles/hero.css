@@ -3,7 +3,7 @@
   justify-content: space-between;
   position: relative;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
   }
 
@@ -23,7 +23,7 @@
       line-height: 0.73;
 
       @media screen and (max-width: 1440px) {
-        font-size: 15vw;
+        font-size: 16vw;
       }
     }
   }
@@ -31,9 +31,9 @@
   .content-wrapper {
     display: flex;
     justify-content: center;
-    width: 41%;
+    width: 42%;
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 768px) {
       padding: 2rem;
       position: absolute;
       width: auto;
@@ -45,7 +45,7 @@
       flex-direction: column;
       gap: 1.5rem;
       justify-content: center;
-      padding-bottom: 8rem;
+      padding: 2rem 2rem 10rem;
 
       .content-heading {
         font-size: 1.2rem;
@@ -53,7 +53,7 @@
         line-height: 1.45;
         margin: 0;
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 768px) {
           color: var(--color-white);
         }
       }
@@ -63,9 +63,9 @@
   .hero-image {
     display: flex;
     overflow: hidden;
-    width: 59%;
+    width: 58%;
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 768px) {
       width: 100%;
     }
 

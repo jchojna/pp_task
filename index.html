@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,13 +12,13 @@
     />
   </head>
   <body>
-    <main class="main">
+    <main class="main" role="main">
       <section class="hero">
-        <header class="header header-js">
+        <header class="header header-js" role="banner">
           <h1 class="header-heading">Panowie</h1>
         </header>
         <div class="content-wrapper">
-          <div class="content">
+          <div class="content" role="region" aria-label="Hero Content">
             <h2 class="content-heading">
               We are Panowie Pro.<br />A software studio for creatives.
             </h2>
@@ -28,6 +27,7 @@
               href="https://p-programisci.pl/praca/"
               rel="noopener noreferrer"
               target="_blank"
+              aria-label="Work with us at Panowie Pro"
               >Work with us
             </a>
           </div>
