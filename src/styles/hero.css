@@ -8,9 +8,10 @@
   }
 
   .header {
-    display: flex;
     align-items: end;
+    container: heading / size;
     bottom: 0;
+    display: flex;
     pointer-events: none;
     position: absolute;
     width: 100%;
@@ -21,14 +22,20 @@
       font-size: 14rem;
       font-weight: 600;
       line-height: 0.73;
+      width: 100%;
 
       @media screen and (max-width: 1440px) {
-        font-size: 16vw;
+        font-size: 17.5cqw;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 20cqw;
       }
     }
   }
 
   .content-wrapper {
+    container: heading / padding;
     display: flex;
     justify-content: center;
     width: 42%;
@@ -44,16 +51,29 @@
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
-      justify-content: center;
-      padding: 2rem 2rem 10rem;
+      justify-content: flex-start;
+      padding: 2rem;
+      padding-top: 8rem;
 
       .content-heading {
         font-size: 1.2rem;
         font-weight: 500;
         line-height: 1.45;
         margin: 0;
+      }
 
-        @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1440px) {
+        padding-top: 8cqw;
+      }
+
+      @media screen and (max-width: 1000px) {
+        padding-top: 3cqw;
+      }
+
+      @media screen and (max-width: 768px) {
+        padding: 1rem;
+
+        .content-heading {
           color: var(--color-white);
         }
       }
