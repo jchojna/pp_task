@@ -11,8 +11,16 @@ const imageScrollFactor = -0.25;
 
 ctaLink.addEventListener('mousemove', (e: MouseEvent): void => {
   const { left, top } = ctaLink.getBoundingClientRect();
-  ctaLink.style.setProperty('--cta-glow-left', `${e.clientX - left}px`);
-  ctaLink.style.setProperty('--cta-glow-top', `${e.clientY - top}px`);
+  // update CSS variable to determine the left offset of the glow
+  ctaLink.style.setProperty(
+    '--cta-glow-left',
+    `${Math.round(e.clientX - left)}px`
+  );
+  // update CSS variable to determine the top offset of the glow
+  ctaLink.style.setProperty(
+    '--cta-glow-top',
+    `${Math.round(e.clientY - top)}px`
+  );
 });
 
 window.addEventListener('scroll', () => {

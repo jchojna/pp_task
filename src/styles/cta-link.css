@@ -39,13 +39,16 @@
     width: var(--glow-size);
   }
 
-  &:hover::before {
-    opacity: 1;
-    transition: opacity 0.3s, transform 0.3s, visibility 0s;
-    visibility: visible;
-  }
+  /* hover effect not accessible on mobile devices */
+  @media screen and (min-width: 1001px) {
+    &:hover::before {
+      opacity: 1;
+      transition: opacity 0.3s, transform 0.3s, visibility 0s;
+      visibility: visible;
+    }
 
-  &:active::before {
-    transform: scale(1.4);
+    &:active::before {
+      transform: scale(1.4);
+    }
   }
 }
