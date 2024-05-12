@@ -1,3 +1,7 @@
+:root {
+  --glow-size: 120px;
+}
+
 .content-cta {
   align-items: center;
   align-self: flex-start;
@@ -15,6 +19,33 @@
   font-weight: 600;
   height: 2.5rem;
   line-height: 0;
+  overflow: hidden;
   padding: 0.7rem 1.5rem;
+  position: relative;
   text-decoration: none;
+
+  &::before {
+    background: radial-gradient(var(--color-sand-light), transparent 70%);
+    content: '';
+    height: var(--glow-size);
+    left: calc(var(--cta-glow-left) - var(--glow-size) / 2);
+    mix-blend-mode: lighten;
+    opacity: 0;
+    position: absolute;
+    top: calc(var(--cta-glow-top) - var(--glow-size) / 2);
+    transform: scale(1);
+    transition: opacity 0.3s, transform 0.3s, visibility 0s 0.3s;
+    visibility: hidden;
+    width: var(--glow-size);
+  }
+
+  &:hover::before {
+    opacity: 1;
+    transition: opacity 0.3s, transform 0.3s, visibility 0s;
+    visibility: visible;
+  }
+
+  &:active::before {
+    transform: scale(1.4);
+  }
 }
