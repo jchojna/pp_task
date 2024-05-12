@@ -1,0 +1,30 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 11rem;
+  max-width: 1440px;
+  padding: 5rem 5rem 6.75rem;
+  width: 100%;
+
+  @media screen and (max-width: 1440px) {
+    gap: 12vw;
+    padding: 3rem 3rem 5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+
+    .placeholder {
+      padding: 0 1.5rem 2rem;
+    }
+  }
+
+  .placeholder {
+    .placeholder-content {
+      background-color: var(--color-grey);
+      border-radius: 0.5rem;
+      height: 744px;
+      width: 100%;
+    }
+  }
+}

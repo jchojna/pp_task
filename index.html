@@ -1,13 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500..600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="app"></div>
+    <main class="main" role="main">
+      <section class="hero">
+        <header class="header header-js" role="banner">
+          <h1 class="header-heading">Panowie</h1>
+        </header>
+        <div class="content-wrapper">
+          <div class="content" role="region" aria-label="Hero Content">
+            <h2 class="content-heading">
+              We are Panowie Pro.<br />A software studio for creatives.
+            </h2>
+            <a
+              class="content-cta content-cta-js"
+              href="https://p-programisci.pl/praca/"
+              rel="noopener noreferrer"
+              target="_blank"
+              aria-label="Work with us at Panowie Pro"
+              >Work with us
+            </a>
+          </div>
+        </div>
+        <div
+          class="hero-image hero-image-js"
+          role="img"
+          aria-label="Image of a desert"
+        ></div>
+      </section>
+      <section class="placeholder">
+        <div class="placeholder-content"></div>
+      </section>
+    </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

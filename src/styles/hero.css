@@ -1,0 +1,80 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  .header {
+    align-items: end;
+    bottom: 0;
+    container: heading / size;
+    display: flex;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    .header-heading {
+      margin: 0;
+      font-size: 14rem;
+      font-weight: 600;
+      line-height: 0.73;
+
+      @media screen and (max-width: 1440px) {
+        font-size: 17.5cqw;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 20cqw;
+      }
+    }
+  }
+
+  .content-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 42%;
+
+    @media screen and (max-width: 768px) {
+      padding: 2rem;
+      position: absolute;
+      width: auto;
+      z-index: 1;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      justify-content: flex-start;
+      padding: 2rem;
+      padding-top: 8rem;
+
+      .content-heading {
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.45;
+        margin: 0;
+
+        @media screen and (max-width: 768px) {
+          color: var(--color-white);
+        }
+      }
+    }
+  }
+
+  .hero-image {
+    background: url('img/desert.png');
+    background-position-y: var(--hero-img-top);
+    background-size: cover;
+    height: 500px;
+    width: 58%;
+
+    @media screen and (max-width: 1000px) {
+      height: 450px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
