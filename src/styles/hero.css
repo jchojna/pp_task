@@ -63,7 +63,7 @@
   }
 
   .hero-image {
-    background: url('img/desert.png');
+    background: url('../assets/img/desert.png');
     background-position-y: var(--hero-img-top);
     background-size: cover;
     height: 500px;

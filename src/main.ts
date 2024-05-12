@@ -1,5 +1,3 @@
-import './main.css';
-
 const ctaLink = document.querySelector('.content-cta-js');
 if (!ctaLink || !(ctaLink instanceof HTMLElement)) {
   throw new Error('ctaLink not found');
