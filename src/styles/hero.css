@@ -3,14 +3,10 @@
   justify-content: space-between;
   position: relative;
 
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-  }
-
   .header {
     align-items: end;
-    container: heading / size;
     bottom: 0;
+    container: heading / size;
     display: flex;
     pointer-events: none;
     position: absolute;
@@ -22,7 +18,6 @@
       font-size: 14rem;
       font-weight: 600;
       line-height: 0.73;
-      width: 100%;
 
       @media screen and (max-width: 1440px) {
         font-size: 17.5cqw;
@@ -35,7 +30,6 @@
   }
 
   .content-wrapper {
-    container: heading / padding;
     display: flex;
     justify-content: center;
     width: 42%;
@@ -60,20 +54,8 @@
         font-weight: 500;
         line-height: 1.45;
         margin: 0;
-      }
 
-      @media screen and (max-width: 1440px) {
-        padding-top: 8cqw;
-      }
-
-      @media screen and (max-width: 1000px) {
-        padding-top: 3cqw;
-      }
-
-      @media screen and (max-width: 768px) {
-        padding: 1rem;
-
-        .content-heading {
+        @media screen and (max-width: 768px) {
           color: var(--color-white);
         }
       }
@@ -81,15 +63,17 @@
   }
 
   .hero-image {
-    display: flex;
-    overflow: hidden;
+    background: url('img/desert.png');
+    background-position-y: var(--hero-img-top);
+    background-size: cover;
+    height: 500px;
     width: 58%;
 
-    @media screen and (max-width: 768px) {
-      width: 100%;
+    @media screen and (max-width: 1000px) {
+      height: 450px;
     }
 
-    .image {
+    @media screen and (max-width: 768px) {
       width: 100%;
     }
   }

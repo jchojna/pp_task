@@ -4,10 +4,8 @@
   --color-white: #fff;
   --color-sand-dark: #b06642;
   --color-sand-light: #f4b17e;
-
-  --media-s: 768px;
-  --media-m: 992px;
-  --media-l: 1440px;
+  --glow-size: 120px;
+  --hero-img-top: -120px;
 
   font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
   background-color: var(--color-white);
